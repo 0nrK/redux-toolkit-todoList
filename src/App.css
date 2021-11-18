@@ -1,38 +1,66 @@
 .App {
+  min-height: 100vh;
+  height: auto;
+  background-color: aliceblue;
+}
+
+input {
+  padding: 12px;
+  border: none;
+  background-color: gray;
+  font-size: 1.5rem;
+  color: white;
+
+}
+
+.saveBtn{
+  padding: 12px;
+  border: none;
+  background-color: cadetblue;
+  font-size: 1.5rem;
+  margin-left: 12px;
+}
+
+.toggled {
+  text-decoration-line : line-through;
+}
+
+.container {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul,li {
+  list-style-type: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.taskWrapper {
+  position: relative;
+  font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.deleteBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px;
+  background-color: tomato;
+  border: none;
+  width: 1.5rem;
+  border-radius: 6px;
+  margin-right: 1rem;
+}
+
+.clearBtn{
+  
+  padding: 12px;
   color: white;
+  background-color: black;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.markBtn {
+  padding: 12px;
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+  margin-left: 1rem;
 }
